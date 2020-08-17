@@ -36,11 +36,11 @@
 
                         <?php
                    
-                            $result_set = User::find_user_by_id(2);
+                            $user = User::find_user_by_id(2);
+                        
+                            echo $user -> username;
 
-                            $row = mysqli_fetch_array($result_set);
-
-                            echo $row['username']."<br/>";
+                            
                         
                         
                         ?>
